@@ -1,0 +1,27 @@
+#spring.datasource.url= jdbc:h2:mem:test
+#spring.h2.console.enabled=true
+#springdoc.api-docs.enabled=true
+#springdoc.swagger-ui.enabled=true
+#spring.mvc.pathmatch.matching-strategy=ant_path_matcher
+
+spring:
+  sql:
+    init:
+      mode: always
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todolist
+    username: postgres
+    password: 12345678
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  error:
+    include-message: always

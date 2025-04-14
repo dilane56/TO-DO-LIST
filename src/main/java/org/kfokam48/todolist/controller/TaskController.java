@@ -16,7 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/tasks")
-@Tag(name = "TO-DO-LIST", description = "Gérer les taches a savoir Ajouter Supprimer, Modifier, Afficher")
+
 public class TaskController {
 
    private final TaskService taskService;

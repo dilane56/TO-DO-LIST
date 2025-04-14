@@ -62,7 +62,7 @@ public class TaskServiceImpl implements TaskService {
                 throw new UniqueConstraintViolationException("Une Tache existe deja avec ce titre :" + updateTask.getTitle());
             }
         }
-       
+
         task.setTitle(updateTask.getTitle());
         task.setDescription(updateTask.getDescription());
         task.setStatut(updateTask.getStatut());
